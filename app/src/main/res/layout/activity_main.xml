@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#f4f1f5"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hewanpedia"
+        android:textStyle="bold"
+        android:textColor="#4f5fbb"
+        android:textSize="29sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/bingkai"
+        android:padding="15dp"
+        >
+
+        <ImageButton
+            android:id="@+id/btn_buka_ras_tikus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginLeft="-10sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/thumb_tikus" />
+
+        <ImageButton
+            android:id="@+id/btn_buka_ras_burung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_buka_ras_tikus"
+            android:layout_weight="1"
+            android:padding="10sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/thumb_burung" />
+
+        <ImageButton
+            android:id="@+id/btn_buka_ras_paus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_buka_ras_tikus"
+            android:layout_marginLeft="-5sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="5sp"
+            android:padding="10sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/thumb_paus" />
+
+        <ImageButton
+            android:id="@+id/btn_buka_ras_hiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_buka_ras_burung"
+            android:layout_alignLeft="@+id/btn_buka_ras_burung"
+            android:scaleType="fitCenter"
+            android:padding="10sp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/thumb_hiu" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Tekan gambar untuk membuka galeri)"
+        android:textStyle="italic"
+        android:layout_marginBottom="32dp"
+        android:textColor="#999"
+        />
+
+    <Button
+        android:id="@+id/biodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Biodata"/>
+
+</LinearLayout>
