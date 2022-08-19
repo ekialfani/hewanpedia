@@ -1,7 +1,7 @@
 <h1 id="about" align="center">Hewanpedia</h1>
 
 <div align="center">
-    <img src="app/src/main/res/drawable/hewanpedia-screenshoot.jpg" width="60%">
+    <img src="app/src/main/res/drawable/hewanpedia-screenshoot.jpg" width="35%">
 </div>
 
 <br>
